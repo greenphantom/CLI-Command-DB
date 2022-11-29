@@ -6,3 +6,6 @@ from utils.app_env import ENV as env
 HOST = env.get_value('FLASK_HOST', '0.0.0.0')
 PORT = int(env.get_value('FLASK_PORT', '5000'))
 DEBUG = env.get_bool_value('FLASK_DEBUG', False)
+
+# DATABASE
+INIT_DB = env.get_bool_value('INIT_DB', True)

@@ -16,14 +16,14 @@ def get_db():
             detect_types=sqlite3.PARSE_DECLTYPES
         )
         g.db.row_factory = sqlite3.Row
-    
+
     # Return the database connection
     return g.db
 
 
 def close_db(e=None):
     """Check if a connection was created by checking if g.db was set.
-    
+
     If the connection exists, it is closed.
 
     Args:
@@ -53,6 +53,6 @@ def init_app_db_procedures(app: Flask):
     """Procedure to call when initializing the app."""
     # Tells Flask to call that function when cleaning up after returning the response.
     app.teardown_appcontext(close_db)
-    
+
     # Add a new command that can be called with the flask command.
     app.cli.add_command(init_db_command)

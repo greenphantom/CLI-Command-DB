@@ -9,7 +9,7 @@ def create_app(test_config=None) -> Flask:
 
     Args:
         test_config : Optional config for testing the application. Defaults to None.
-    
+
     Returns:
         Flask: The configured application
     """
@@ -40,8 +40,8 @@ def create_app(test_config=None) -> Flask:
 
     from . import db
     db.init_app_db_procedures(app)
-    
+
     from routes.command_route import cmd_route
     app.register_blueprint(cmd_route)
-    
+
     return app

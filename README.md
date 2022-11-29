@@ -24,6 +24,13 @@ To do this, run `pip freeze > requirements.txt` and then stash / commit your cha
 
 ## Run the App
 
+### Database Setup
+In order for the API to run, you must add first initialize the database.
+
+To do this, run the following prior to calling `flask run`:
+
+`flask init-db`
+
 ### CMD
 
 ```
