@@ -2,9 +2,25 @@
 
 ## Overview
 
-This project was built for fun to encapsulate storing command refernces within a flask microservice.
+This project was built for fun to encapsulate storing command references within a flask microservice.
 
-Using this service, you'll be able to store command examples and references to an SQL database. 
+Using this service, you'll be able to store command examples and references to an SQL database.
+
+## Local Setup Guide
+
+Before starting the setup process, please ensure you have Python/Anaconda and Docker installed and set up on your machine. Additionally, make sure you
+have pip / conda configured. Once you have cloned the repo, please follow the following steps:
+
+1. Activate venv / conda env.
+    - To create a venv, simply run this command: `python -m venv <venv_name>`
+    - For quick activation, run `./<venv_name>/Scripts/Activate.ps1`
+2. Install all the dependencies using this command: `python -m pip install -r requirements.txt`
+
+## Updating Dependencies
+
+If any dependencies are updated, please be sure to update `requirements.txt`
+
+To do this, run `pip freeze > requirements.txt` and then stash / commit your changes.
 
 ## Run the App
 
