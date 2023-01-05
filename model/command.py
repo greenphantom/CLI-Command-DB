@@ -2,11 +2,11 @@
 
 from dataclasses import dataclass, field
 
-@dataclass
+@dataclass(frozen=True)
 class Command():
     """Model for the commands, used to group data on command groupings."""
 
-    # CLI Command 
+    # CLI Command
     command: str = "Some command..."
 
     # Description fo the command

@@ -1,4 +1,5 @@
 """Script defining the utility to read env constants."""
+
 import os
 from typing import Any
 from dotenv import load_dotenv, dotenv_values
