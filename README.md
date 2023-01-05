@@ -54,3 +54,14 @@ export FLASK_APP=flaskr
 export FLASK_ENV=development
 flask run
 ```
+
+## Run With Docker
+
+To run the app with Docker, simply use the docker-compose utility
+
+> `docker-compose up`
+
+You can add the `-d` flag if you want it run in the background.
+However, to safely stop the container, run be sure to run `docker-compose down`
+
+If properly running, you should be able to navigate to http://localhost:5055 (or whatever port you have if changed) and see the application works as intended.
