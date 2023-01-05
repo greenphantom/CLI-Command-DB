@@ -9,7 +9,7 @@ def populate_init(path: str):
     init_path = os.path.join(path, "__init__.py")
     file_names = os.listdir(path)
     py_check = re.compile(r'.*\.py')
-    filter_check = re.compile('__init__.py|__pycache__|venv|.vscode|.git|.pytest_cache|logs|flaskr')
+    filter_check = re.compile('__init__.py|__pycache__|venv|.vscode|.git|.pytest_cache|logs|flaskr|instance')
     all = []
 
     # Remove the old init if it exists
