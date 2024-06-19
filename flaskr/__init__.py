@@ -36,7 +36,7 @@ def create_app(test_config=None) -> Flask:
     # a simple page that says hello
     @app.route('/')
     def hello():
-        return 'Hello, World!'
+        return 'Welcome to my command app. Please use the /commands route to see all available commands.'
 
     from . import db
     db.init_app_db_procedures(app)
